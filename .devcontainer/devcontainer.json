@@ -136,8 +136,11 @@
       },
 
       "extensions": [
+        // Theme and Icons
         "atommaterial.a-file-icon-vscode",
         "vira.vsc-vira-theme",
+        
+        // Git and GitHub
         "GitHub.vscode-pull-request-github",
         "GitHub.codespaces",
         "github.vscode-github-actions",
@@ -175,3 +178,4 @@
   "postCreateCommand": "cd /workspaces/pytemplate && uv venv .venv --clear && uv sync --all-groups && uv run pre-commit install -c .pre-commit-config.yaml && sudo chown -R dev:dev /workspaces/pytemplate/volumes",
   "remoteUser": "vscode"
 }
+
