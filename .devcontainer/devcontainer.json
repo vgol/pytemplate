@@ -183,6 +183,7 @@
       ]
     }
   },
-  "postCreateCommand": "uv venv .venv --clear && uv sync --all-groups && uv run pre-commit install -c .pre-commit-config.yaml && sudo chown -R dev:dev /workspaces/pytemplate/volumes",
+  "postCreateCommand": "cd /workspaces/pytemplate && uv venv .venv --clear && uv sync --all-groups && uv run pre-commit install -c .pre-commit-config.yaml",
   "remoteUser": "vscode"
 }
+
