@@ -26,7 +26,7 @@
 
    "ghcr.io/devcontainers/features/python:1": {
       "version": "3.13",
-      "installPath": "/usr/local/python/current/bin",
+      "installPath": "/workspaces/pytemplate/.venv/bin/",
       "installTools": true,
       "toolsToInstall": "uv,uvx"
     },
@@ -57,7 +57,7 @@
         },
         "python.languageServer": "Pylance",
         "python.defaultInterpreterPath": "/workspaces/pytemplate/.venv/bin/python",
-        "python.formatting.provider": "ruff",
+        "python.formatting.provider": "none",
         "python.testing.pytestEnabled": true,
         "python.testing.autoTestDiscoverOnSaveEnabled": true,
         "python.testing.cwd": "/workspaces/pytemplate/app",
@@ -136,11 +136,8 @@
       },
 
       "extensions": [
-        // Theme and Icons
         "atommaterial.a-file-icon-vscode",
         "vira.vsc-vira-theme",
-        
-        // Git and GitHub
         "GitHub.vscode-pull-request-github",
         "GitHub.codespaces",
         "github.vscode-github-actions",
@@ -153,36 +150,28 @@
         "ms-vscode-remote.remote-wsl",
         "docker.docker",
         "ms-vscode.remote-repositories",
-        
-        // AI assistants
         "github.copilot",
         "github.copilot-chat",
-        
-        // Python
         "ms-python.debugpy",
         "ms-python.python",
         "charliermarsh.ruff",
         "quicktype.quicktype",
         "the0807.uv-toolkit",
         "matangover.mypy",
-        
-        // Jupyter and Data Science
         "ms-toolsai.jupyter",
         "ms-toolsai.vscode-jupyter-cell-tags",
         "ms-toolsai.vscode-jupyter-slideshow",
-        
-        // Yaml, JSON, TOML
         "redhat.vscode-yaml",
         "tamasfe.even-better-toml",
-
-        // Markdown
         "yzhang.markdown-all-in-one",
-
-        // Jira & confluence
-        "atlassian.atlascode"
+        "atlassian.atlascode",
+        "samuelcolvin.jinjahtml",
+        "bierner.markdown-checkbox",
+        "bierner.markdown-emoji",
+        "redhat.vscode-xml"
       ]
     }
   },
-  "postCreateCommand": "uv venv .venv --clear && uv sync --all-groups && uv run pre-commit install -c .pre-commit-config.yaml && sudo chown -R dev:dev /workspaces/pytemplate/volumes",
+  "postCreateCommand": "cd /workspaces/pytemplate && uv venv .venv --clear && uv sync --all-groups && uv run pre-commit install -c .pre-commit-config.yaml && sudo chown -R dev:dev /workspaces/pytemplate/volumes",
   "remoteUser": "vscode"
 }
