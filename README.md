@@ -2,7 +2,7 @@
 
 [![Python 3.13+](https://img.shields.io/badge/python-3.13+-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![Ruff](https://img.shields.io/badge/ruff-passing-brightgreen.svg?style=flat&logo=ruff&logoColor=white)](https://github.com/astral-sh/ruff)
-[![Mypy](https://img.shields.io/badge/mypy-passing-brightgreen.svg?style=flat&logo=python&logoColor=white)](http://mypy-lang.org/)
+[![ty](https://img.shields.io/badge/ty-passing-brightgreen.svg?style=flat&logo=python&logoColor=white)](https://github.com/astral-sh/ty)
 [![Coverage](https://img.shields.io/codecov/c/github/vgol/lazy-seller?flag=backend&logo=python&logoColor=white&label=backend%20coverage)](https://codecov.io/gh/vgol/lazy-seller)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](https://opensource.org/licenses/Apache-2.0)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-009688.svg?style=flat&logo=fastapi)](https://fastapi.tiangolo.com)
