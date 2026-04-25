@@ -91,11 +91,8 @@
         "python-uv.uvPath": "/usr/local/py-utils/bin/uv",
         "python-uv.uvAutoDetect": true,
 
-        // mypy
-        "mypy.runUsingActiveInterpreter": true,
-        "mypy.enabled": true,
-        "mypy.configFile": "/workspaces/pytemplate/pyproject.toml",
-        "mypy.dmypyExecutable": "/workspaces/pytemplate/.venv/bin/dmypy",
+        // ty
+        "ty.interpreter.pythonPath": "/workspaces/pytemplate/.venv/bin/python",
 
         "json.schemas": [
           {
@@ -162,9 +159,9 @@
         "ms-python.debugpy",
         "ms-python.python",
         "charliermarsh.ruff",
+        "astral-sh.ty",
         "quicktype.quicktype",
         "the0807.uv-toolkit",
-        "matangover.mypy",
         
         // Jupyter and Data Science
         "ms-toolsai.jupyter",
